@@ -1,0 +1,174 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapisS.com/css2?family=Merienda:wght@700&display=swap');
+
+
+/* 선택자 (selector *, 태그(a, ul, header), id(#아이디명), class(.클래스명) */
+
+*{
+  margin :0;
+  padding: 0;
+  box-sizing: border-box; /* box영역 테두리까지 */
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+#container{
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #ffffff;
+}
+
+
+/* 헤더 영역 - 로고와 내비게이션 */
+
+header{
+  width: 100%; /* 해당 요소를 감싸는 부모 요소의 크기로 맞춤 */
+  height: 100px; /* SPA여도 보통 높이는 고정형 픽셀로 처리 */
+  background-color: #004455;
+}
+
+
+#logo{
+  float: left;  /* float 속성 떠있음. */
+  width: 300px;
+  height: 100px;
+  line-height: 100px; /* 세로 중간 맞춤 - 줄 간격을 높이 값과 같게 */
+  padding-left: 20px;
+}
+
+/* logo의 밑에 있는 자손태그 h1에(logo 안에 있는 모든 h1태그에) 적용하는 태그 */
+#logo h1{
+  font-family: 'Merienda', cursive; /* font를 여러 개 지정한다. */
+  font-weight: bold;
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 #222222;
+}
+
+/* 내비게이션 메뉴 */
+nav{
+  float: right;
+  width: 900px;
+  height: 100px;
+  padding-top: 40px;
+}
+
+/* 탑 메뉴 */
+#topMenu{
+  height: 60px;
+}
+
+/* 자식 선택자 */
+#topMenu > li{
+  float: left;
+  position: relative;
+}
+
+
+/* a태그는 block요소가 아님, inline요소임 */
+#topMenu > li > a{
+  display: block;  /* block으로 지정해줘야 block처럼 사용할 수 있음 */
+  font-size: 1.1em; /* 폰트 사이즈 110% */
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0px 40px;
+}
+
+
+#topMenu > li > a:hover{
+  color: #1fa8f8;
+  text-shadow: 0 -2px #222222;
+}
+
+
+.contents{
+  width: 1000px;
+  margin: 50px auto;
+}
+
+/* 자식 선택자 */
+main > section{
+  margin-top: 60px;
+}
+
+/* 자손 선택자 */
+main h2{
+  font-size: 1.5em;
+  line-height:2.5
+}
+
+main div{
+  margin-top: 20px;
+}
+
+main h3{
+  font-size: 1.2em;
+  line-height: 2.2;
+}
+
+
+.detail p{
+  line-height: 2.0;
+  color: #222222;
+
+}
+.detail img{
+  float: left;
+  margin-right: 50px;
+  border-radius: 20px;
+}
+
+.schedule h3{
+  font-size: 1.2em;
+}
+
+.schedule ul li{
+  line-height: 2.0;
+}
+
+/* footer */
+
+footer{
+  width: 1200px;
+  height: 100px;
+  border-top: 2px solid #222222;
+}
+
+#bottomMenu{
+  width: 100%;
+  height: 20px;
+  margin-left: 60px;
+}
+
+#bottomMenu ul{
+  margin-top: 15px;
+}
+
+#bottomMenu ul li{
+  float: left;
+  padding: 5px 20px;
+  border-right: 1px solid #000000;
+}
+
+/* li요소 중 마지막 요소 :last-child(가상 선택자) */
+#bottomMenu ul li:last-child{
+  border: none;
+}
+
+/* 두개 이상의 선택자. a와 a:visited */
+#bottomMenu ul li a, #bottomMenu ul li a:visited{
+  font-size: 15px;
+  color: #666666;
+}
+
+
+
+
+
+
