@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form 전송</title>
+</head>
+<body>
+<h1>통합 검색</h1>
+  <form action="search.jsp" method="get"> <!-- 기본 method get -->
+    <input name="hl" /> <br/>
+    <input name="q" maxlength="10" size="5" value="축구" />  <br/>
+    <input name="aq" /><br/>
+    <input name="oq" /><br/>
+    <input type="submit" />
+  </form>
+  <hr />
+  <form action="//google.com/search.jsp" > <!-- 기본 method get -->
+  검색할 단어:<input name="q" type="search" /> <input type="submit" /> <br/>
+  </form>
+  
+</body>
+</html>

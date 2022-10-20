@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>input 태그들</title>
+</head>
+<body>
+  <form action="order.jsp">
+    <fieldset>
+      <legend>필수 입력 사항</legend>
+      <label> 아이디<input name="id" /></label> <br/>
+      <label>비밀번호<input type="password" name="pwd" /></label> <br/>
+      <label>웹 주소<input type="url" name="url" /></label> <br/>
+      <label>이메일<input type="email" name="email" /></label> <br/>
+      <label>전화번호<input type="tel" name="tel" /></label> <br/>
+      <input type="submit" value="확인">
+    </fieldset>
+    <fieldset>
+      <legend>선물 선택</legend>
+      <label> 선물용 3kg
+      <input type="checkbox" name="gubun" value="g_3kg" checked /></label>
+      <label> 선물용 5kg
+      <input type="checkbox" name="gubun" value="g_5kg" /></label>
+      <label> 가정용 3kg
+      <input type="checkbox" name="gubun" value="f_3kg" /></label>
+      <label> 가정용 5kg
+      <input type="checkbox" name="gubun" value="f_5kg" /></label> <br/>
+    
+    
+      <p>포장 여부</p> 
+      <label><input type="radio" name="pack" value="yes" checked /> 선물 포장 </label>
+      <label><input type="radio" name="pack" value="no" /> 안 함 </label> <br/>
+      <input type="submit" value="확인">
+    </fieldset>
+  </form>
+</body>
+</html>

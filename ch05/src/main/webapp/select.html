@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>select</title>
+</head>
+<body>
+<h1>레드향 주문하기</h1>
+<form action="">
+  <fieldset>
+    <legend>상품 선택</legend>
+    <p><b>주문할 상품을 선택해주세요.</b></p>
+    <select name="sel1" size="6" multiple>
+      <optgroup label="선물용">
+        <option value="g_3">선물용 3kg</option>
+        <option value="g_5">선물용 5kg</option>
+      </optgroup>
+      <optgroup label="가정용">
+      <option value="f_3">가족용 3kg</option>
+      <option value="f_5">가족용 5kg</option>
+      </optgroup>
+    </select>
+  </fieldset>
+  <fieldset>
+    <legend>상품 선택</legend>
+    <p><b>주문할 상품을 선택해주세요.</b></p>
+    <label><input list="goods" name="goods"/></label>
+    <datalist id="goods">
+      <option value="g_3">선물용 3kg</option>
+      <option value="g_5">선물용 5kg</option>
+      <option value="f_3">가족용 3kg</option>
+      <option value="f_5">가족용 5kg</option>
+    </datalist>
+  </fieldset>
+  <button type="submit">전송 </button>
+  <button type="reset">취소 </button>
+  
+  
+</form>
+</body>
+</html>
