@@ -1,0 +1,14 @@
+@charset "UTF-8";
+#container{
+  width: 600px;
+  margin: 20px auto;
+}
+h1{
+  display: inline-block;
+  background-color: 0404aa;
+  color: white;
+}
+.accent{
+  color: red;
+  font-weight: bold;
+} 
