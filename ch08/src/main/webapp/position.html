@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position</title>
+<style>
+p{
+  width: 500px;
+  height: 200px;
+  background-color: #eeeeee;
+  border: 1px solid #cccccc;
+  line-height: 2;
+}
+#static{
+  position: static;
+}
+#relative-1{
+  position: relative;
+}
+#relative-2{
+  position: relative;
+  left: 100px;
+  top: -50px;
+}
+#fixed{
+  position: fixed; /* body를 기준으로(relative 기준이 아님) */
+  width: 100px;
+  height: 100px;
+  right: 30px;
+  top: 30px;
+}
+
+</style>
+</head>
+<body>
+<p id="static">Mollit do sunt ut ea deserunt ut ipsum cupidatat dolore minim ea. Eu est non fugiat pariatur ipsum voluptate. Consequat do aliquip elit nostrud. Qui laborum ipsum esse sit sit laboris laborum reprehenderit deserunt officia sunt excepteur cupidatat.</p>
+
+<p id="relative-1">"Non fugiat anim dolor qui reprehenderit laborum. Qui aliquip amet commodo eu est et aliqua in Lorem magna pariatur amet irure. Occaecat qui enim occaecat enim minim aute irure esse. Ex fugiat commodo deserunt pariatur amet deserunt mollit irure magna sunt proident. Exercitation commodo proident aliqua aliquip. Laborum deserunt enim id quis quis. Et ut duis tempor velit sit non.</p>
+
+<p id="relative-2">Culpa deserunt elit qui incididunt et eiusmod laborum proident velit est minim enim. Laborum cillum eu aliquip amet elit nisi laboris commodo minim esse aliqua. Fugiat aliqua aute minim exercitation. Veniam eiusmod laboris do pariatur ea amet. Magna fugiat ipsum ut esse fugiat ipsum do do excepteur non. Dolore dolor pariatur irure et ipsum nostrud nulla pariatur qui cupidatat excepteur veniam magna. Aliquip esse nulla velit magna aliquip officia elit consequat adipisicing eiusmod dolor ullamco pariatur reprehenderit.</p>
+
+<p id="fixed"></p>
+</body>
+</html>

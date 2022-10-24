@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>원형 그라데이션</title>
+<style>
+li{
+  width: 500px;
+  height: 300px;
+  margin: 10px;
+  border: 1px solid black;
+  display: inline-block;
+}
+#div1{  /* 그라데이션 중심에서 가장 가까운 모서리에 닿을 때까지 */
+  background: radial-gradient(circle closest-side at 30% 40%, white, yellow)
+}
+#div2{  /* 그라데이션 중심에서 가장 가까운 꼭지점에 닿을 때까지 */
+  background: radial-gradient(circle closest-corner at 30% 40%, white, yellow)
+}
+#div3{  /* 그라데이션 중심에서 가장 멀리 떨어진 모서리에 닿을 떄까지 */
+  background: radial-gradient(circle farthest-side at 30% 40%, white, yellow)
+}
+#div4{  /* 그라데이션 중신에서 가장 멀리 떨어진 꼭지점에 닿을 떄까지 */
+  background: radial-gradient(circle farthest-corner at 30% 40%, white, yellow)
+}
+
+</style>
+</head>
+<body>
+<ul>
+  <li id="div1"></li>
+  <li id="div2"></li>
+  <li id="div3"></li>
+  <li id="div4"></li>
+</ul>
+</body>
+</html>

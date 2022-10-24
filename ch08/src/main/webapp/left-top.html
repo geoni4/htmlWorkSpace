@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS 위치 속성</title>
+<style>
+*{
+  margin: 0;
+  padding: 0;
+}
+p{
+  width: 300px;
+  border: 1px solid #cccccc;
+  padding: 10px;
+}
+ /* 부모요소(container)를 기준으로 absolute 
+    부모나 조상 요소 중에 position: relative가 없으면 맨 위로 올라가서 body기준까지 도달한다
+ */
+#pos1{
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+#pos2{
+  position: absolute;
+  right: 100px;
+  top: 100px;
+}
+#pos3{
+  position: absolute;
+  left: 100px;
+  bottom: 100px;
+}
+#container{
+  width: 900px;
+  height: 600px;
+  border: 1px solid #000000;
+  position: relative;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<p id="pos1">Esse ut ea do occaecat ad commodo quis laborum adipisicing. Eiusmod ea culpa eu aliqua tempor qui non in anim veniam duis dolore nostrud. Voluptate reprehenderit adipisicing ea incididunt officia ad fugiat. Adipisicing commodo cupidatat proident velit commodo dolore occaecat ipsum adipisicing laboris. Velit ut consequat amet culpa cupidatat.</p>
+
+<p id="pos2">Irure occaecat non aute minim tempor. Voluptate dolor nisi aliqua Lorem. Deserunt mollit nisi sunt qui ut velit enim aute occaecat veniam deserunt voluptate esse irure.</p>
+
+<p id="pos3">Id aliqua nulla qui duis reprehenderit ea consectetur aliquip. Officia Lorem dolor consequat pariatur sit aliqua mollit. Officia consequat occaecat aliqua nostrud Lorem magna. Veniam consequat quis ex aliquip aliquip nulla nulla est amet Lorem ullamco.</p>
+</div>
+</body>
+</html>
