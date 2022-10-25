@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>translate</title>
+<style>
+#container{
+  width: 800px;
+  height: 200px;
+  margin: 20px auto;
+}
+
+.origin{
+  width: 100px;
+  height: 100px;
+  margin: 40px;
+  border: 1px solid black;
+  float: left;
+}
+.origin > div{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+#scaleX:hover{
+  transform: scaleX(2);
+}
+#scaleY:hover{
+  transform: scaleY(1.5);
+}
+#scaleXY:hover{
+  transform: scale(0.7);
+}
+
+</style>
+</head>
+<body>
+<div id="container">
+  <div class="origin">
+    <div id="scaleX"></div>
+  </div>
+  <div class="origin">
+    <div id="scaleY"></div>
+  </div>
+  <div class="origin">
+    <div id="scaleXY"></div>
+  </div>
+</div>
+
+</body>
+</html>
