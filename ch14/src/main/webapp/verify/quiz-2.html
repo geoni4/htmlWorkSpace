@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>연습문제 2</title>
-	<style>
-		body {
-			font-size:1.2em;
-			text-align:center;
-		}
-	</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>연습문제 2</title>
+<style>
+body {
+  font-size: 1.2em;
+  text-align: center;
+}
+h4{
+  color: red;
+}
+</style>
 </head>
 <body>
-	<h2>3의 배수 찾기</h2>
+  <h2>3의 배수 찾기</h2>
+<script>
+let counter = 0;
+let toNumberMult3 = prompt("몇까지 3의 배수를 찾을까요?");
+
+if(toNumberMult3 !== null){
+  document.write(`<h3>`);
+  for(let i = 1; i <= toNumberMult3; i++){
+    if(i % 3 === 0){
+      document.write(`${i}`);
+      if(!(toNumberMult3 - 3 < i))
+    	  document.write(`, `);
+      counter++;
+    }
+  }
+  document.write(`</h3>`);
+  document.write(`<h4>${toNumberMult3}까지 3의 배수의 개수 : ${counter}</h4>`);
+}
+</script> 
 </body>
 </html>
