@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+let i ;
+let n = 10;
+let sum = 0;
+
+document.write("<h1>짝수끼리 더하기</h1>");
+for(i = 1;i <= n;i++){
+  if(i % 2 === 1) continue;
+  sum += i;
+  document.write(i + " ------ " + sum + "<br>");
+}
+document.write("합계: " + sum)
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>while 문을 사용한 팩토리얼 계산</h1>
+<script>
+let n = prompt("숫자를 입력하세요.");
+let msg = "";
+
+if(n !== null) {
+  let nFact = 1;
+  let i = 1;
+
+  while(i <= n){
+    nFact *= i;
+    msg = i + "! = " + nFact;
+    i++;
+  	
+  	document.write(msg + "<br>");
+  }
+} else{
+	msg = "값을 입력하지 않았습니다.";
+}
+
+document.write(msg);  //결과 표시
+
+</script>
+</body>
+</html>

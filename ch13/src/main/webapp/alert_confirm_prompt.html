@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>alert confirm prompt</title>
+</head>
+<body>
+<script>
+alert("안녕하세요?");
+</script>
+<script>
+let reply = confirm("정말 배경 이미지를 바꾸겠습니까?");
+if(reply){
+	alert("확인 버튼을 클릭했습니다.");
+} else{
+	alert("취소 버튼을 클릭했습니다.")
+}
+</script>
+<script>
+let name = prompt("이름을 입력하세요.", "아무개");
+/* 취소버튼 클릭 시 null */
+/* alert("당신의 이름은" + name+" 입니다, " + name.length) */
+alert(`당신의 이름은 ${name} 입니다. ${name.length}`);
+</script>
+
+</body>
+</html>

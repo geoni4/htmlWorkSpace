@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CSS grid layout</title>
+<style>
+
+#wrapper1{
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: minmax(100px, auto);
+  grid-gap: 20px 30px; /* row-gap 20px, column-gap 30px */
+}
+#wrapper2{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.items{
+  padding: 10px;
+}
+.items:nth-of-type(odd){
+  background-color:#bbbbbb;
+}
+.items:nth-of-type(even){
+  background-color: #dddddd;
+}
+
+</style>
+</head>
+<body>
+<div id="wrapper1">
+  <div class="items">Duis sit dolor magna tempor commodo non incididunt laborum. Nostrud incididunt veniam incididunt aliquip. Aliquip officia quis magna ullamco sit qui ipsum qui. Velit id nostrud ex sint laborum do proident nulla ad irure sint est. Culpa anim in sit cupidatat deserunt consequat ad.</div>
+  <div class="items">Et culpa ex cillum voluptate eiusmod. Nostrud ullamco Lorem officia mollit. Cillum tempor sit amet ut exercitation irure Lorem laboris aute. Consequat incididunt esse eiusmod anim. Proident nisi ipsum aliquip cillum qui ut incididunt voluptate dolor.</div>
+  <div class="items">Sint cupidatat velit culpa consectetur ex ad sit et consectetur quis. Enim sit cillum do sint deserunt nisi dolore ad sint esse commodo nulla. Consequat duis cillum tempor cupidatat Lorem mollit incididunt sunt anim officia non ad aute. Ullamco proident fugiat eu velit laborum reprehenderit occaecat anim enim cupidatat consequat officia.</div>
+  <div class="items">Ullamco laboris minim cupidatat culpa officia occaecat sit irure ullamco reprehenderit anim. Occaecat id occaecat do qui sunt ipsum non ut tempor. Non aliqua non voluptate qui commodo sint. Consequat pariatur irure amet proident sit et do eiusmod est ea consectetur occaecat anim. Nisi eu eu pariatur esse id occaecat.</div>
+  <div class="items">Ex voluptate ut nulla laboris culpa mollit ipsum aliqua velit nulla consectetur ullamco magna anim. Incididunt et consectetur duis do. Do consequat proident nostrud irure Lorem ex. Reprehenderit magna excepteur adipisicing occaecat adipisicing proident duis commodo. Est nostrud et aute in esse duis reprehenderit.</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+let numberOne = 15;
+let numberTwo = 2;
+alert(numberOne / numberTwo);	/* 실수로 출력 7.5 */
+alert(numberOne % numberTwo);	/* 나머지(modula) 연산 */
+
+let birthYear = prompt("태어난 연도를 입력하세요.");
+alert(typeof(birthYear));	/* 입력값은 String, 숫자형 문자열 */
+let thisYear = new Date().getFullYear();
+alert(thisYear - birthYear + 1);	/* birthYear가 자동 형변환 */
+
+</script>
+
+</body>
+</html>
