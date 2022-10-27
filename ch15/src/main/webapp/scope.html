@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>변수 적용 범위(scopes)</title>
+</head>
+<body>
+<script>
+function addNumber(a, b){
+  var sum = a + b;
+  times_10 = sum * 10;
+  if( a != 0 && b != 0){
+    let result = a * b;
+  }
+  return sum;
+}
+
+var add = addNumber(10, 20);
+/* document.write(`지역변수 sum : ${sum} <br/>`); */ 
+// 지역 변수는 함수 밖에서 호출 불가(아무리 var여도 호이스팅이 안 됨)
+document.write(`전역변수 times_10 : ${times_10} <br/>`);
+document.write(`addNumber 결과값 : ${add} <br/>`); 
+</script>
+</body>
+</html>
