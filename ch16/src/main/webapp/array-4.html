@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<script>
+/* 배열 잘라서 남은 건 그대로, 자른 건 return */
+let numbers = [1, 2, 3, 4, 5];
+let newNumbers = numbers.splice(2);
+document.write(`반환된 배열 : ${newNumbers} <br/>`);
+document.write(`반환된 배열 : ${numbers} <br/>`);
+</script>
+<hr/>
+<script>
+
+let study = ["html", "css", "web", "jquery"];
+let newStudy = study.splice(2, 1);/* index 2부터 시작해서 1개만 추출 해서 return. 나머지는 그대로 */
+
+document.write(`반환된 배열 : ${newStudy} <br/>`);
+document.write(`반환된 배열 : ${study} <br/>`);
+</script>
+<hr/>
+<script>
+
+let study2 = ["html", "css", "web", "jquery"];
+let newStudy2 = study2.splice(2, 1, "js");
+/* index 2부터 시작해서 1개만 추출 해서 return. 자른 부분은 그 자리를 원하는 값(js)을 넣는다.*/
+
+document.write(`반환된 배열 : ${newStudy2} <br/>`);
+document.write(`반환된 배열 : ${study2} <br/>`);
+</script>
+</body>
+</html>

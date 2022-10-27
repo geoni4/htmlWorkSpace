@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+let now = new Date();
+document.write(`현재 시각은 ${now} <br/><hr/>`);
+
+let date1 = new Date("2020-02-25");
+document.write(`현재 시각은 ${date1} <br/><hr/>`);
+
+let date2 = new Date("2020-02-25T18:00:00");
+document.write(`현재 시각은 ${date2} <br/><hr/>`);
+
+let date3 = new Date("2020");
+document.write(`현재 시각은 ${date3} <br/><hr/>`);
+
+let date4 = new Date("2020-02");
+document.write(`현재 시각은 ${date4} <br/><hr/>`);
+
+let date5 = new Date("2020-02-25");
+document.write(`현재 시각은 ${date5} <br/><hr/>`);
+
+let date6 = new Date("2020-02-25T18:00:00Z");	// 국제 표준시 기준 2월 25일 18시(UTC) -> 한국시간으로 바뀌면 2월 26일 3시(UTC+9)
+document.write(`현재 시각은 ${date6} <br/><hr/>`);
+
+let date7 = new Date("02/25/2022");
+document.write(`현재 시각은 ${date7} <br/><hr/>`);
+
+let date8 = new Date("Fri Feb 25 2022 00:00:00 GMT+0900");
+document.write(`현재 시각은 ${date7} <br/><hr/>`);
+</script>
+</body>
+</html>

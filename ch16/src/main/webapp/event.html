@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>당첨자 발표</title>
+<style>
+h1 {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  background: #eee;
+}
+div {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<h1>당첨자 발표</h1>
+  
+<script>
+let people = prompt("전체 응모자 수 :");
+let number = 1;
+if(typeof(parseInt(people)) === typeof(number)){
+	let picked = Math.trunc(Math.random() * people) + 1;
+	document.write(`<div>전체 응모자 수: ${people}명</div>`);
+	document.write(`<div>당첨자: ${picked}번</div>`);
+}
+
+
+</script>  
+</body>
+</html>

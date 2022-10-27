@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Array 객체 메소드</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<script>
+let nums = [1, 2, 3];
+let chars = ['a', 'b', 'c', 'd'];
+
+let numChars = nums.concat(chars);
+let charNums = chars.concat(nums);
+document.write(`nums에 chars를 합치면 ${numChars} <br/> chars에 nums합치면 ${charNums}`);
+
+/* 배열 내 요소 합치기 */
+let string1 = nums.join();
+document.write(`<br/>구분자 없이 ${string1}, ${string1.length}`);
+let string2 = nums.join('/');
+document.write(`<br/>구분자 / ${string2}, ${string2.length}`);
+
+
+/* 요소 추가 */
+let ret1 = nums.push(4, 5);/* 배열 뒤에 추가, return 값은 length */
+document.write(`<br/>length: ${ret1}`);
+let ret2 = nums.unshift(0);/* 배열 앞에 추가, return 값은 length */
+document.write(`<br/>length: ${ret2}`);
+
+// 요소 꺼내기
+let popped1 = chars.pop();/* 배열 뒤에서 꺼냄, return 값은 꺼낸 값 */
+document.write(`<br/>꺼낸 요소: ${popped1} | 배열: ${chars}`);
+let popped2 = chars.shift();/* 배열 앞에서 꺼냄, return 값은 꺼낸 값 */
+document.write(`<br/>꺼낸 요소: ${popped2} | 배열: ${chars}`);
+
+
+</script>
+</body>
+</html>
