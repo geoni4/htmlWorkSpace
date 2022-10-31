@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<style>
+div{
+  border: 1px solid #cccccc;
+}
+.one{
+  width: 500px;
+  height: 500px;
+}
+.two{
+  width: 300px;
+  height: 300px;
+}
+.three{
+  width: 100px;
+  height: 100px;
+}
+</style>
+</head>
+<body>
+<div class="one">
+  one
+  <div class="two">
+    two
+    <div class="three">
+      three
+    </div>
+  </div>
+</div>
+<script>
+var divs = document.querySelectorAll('div');
+for(let i =0;i<divs.length;i++){
+  divs[i].addEventListener('click', logEvent, false);
+}
+function logEvent(event){
+	console.log(event.currentTarget.className);
+}
+</script>
+</body>
+</html>

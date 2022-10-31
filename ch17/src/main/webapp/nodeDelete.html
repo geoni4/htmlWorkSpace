@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<style>
+ul{
+  list-style: none;
+}
+button{
+  width: 80px;
+  height: 30px;
+  line-height: 1;
+  background-color: black;
+  color: white;
+  border: 1px solid #222222;
+  cursor: pointer;
+}
+#subject{
+  width: 500px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<div id="container">
+  <h1>Web Programming</h1>
+  <p>공부할 주제를 기록해 보세요.</p>
+  <p>공부가 끝난 것은 클릭해서 삭제할 수 있습니다.</p>
+  <form action="">
+    <input type="text" id="subject" autofocus autocomplete="off"/>
+    <button onclick="newRegister(); return false;">추가</button> 
+  </form>
+  <hr/>
+  <ul id="itemList">
+  </ul>
+  <script>
+  function newRegister(){
+    let newItem = document.createElement('li');			//요소 노드 추가
+    let subject = document.querySelector('#subject');	//폼의 텍스트 필드
+    let newText = document.createTextNode(subject.value);	//텍스트 필드의 값을 텍스트 노드로
+    newItem.appendChild(newText);	// 텍스트 노드를 요소 노드의 자식 노드로 추가
+    
+    let itemList = document.querySelector("#itemList");
+    itemList.insertBefore(newItem, itemList.childNodes[0]);
+    
+    subject.value = "";
+    
+    var items = document.querySelectorAll('li');
+    console.log(items);
+    for(let i =0; i < items.length;i++){
+      items[i].addEventListener('click', function (){
+        if(this.parentNode)
+            this.parentNode.removeChild(this);
+      });
+      
+    }
+    
+    
+  }
+  </script>
+</div>
+
+
+</body>
+</html>

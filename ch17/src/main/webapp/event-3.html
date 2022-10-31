@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM event 객체</title>
+</head>
+<body>
+<div id="container">
+  <img src="./images/cup-1.png" id="cup" />
+</div>
+
+<script>
+let cup = document.getElementById('cup');	// id = cup인 요소(element)를 가져옴.
+cup.onclick = function () {
+  alert(`이벤트 유형: ${event.type}, 이벤트 발생 위치: ${event.pageX}, ${event.pageY}
+  		${event.button}, clientX: ${event.clientX}, screenX: ${event.screenX},
+  		target: ${event.target}, type: ${event.type}, timestamp: ${event.timestamp}
+  		${this.src}`
+  		.trimStart());
+}
+</script>
+</body>
+</html>
