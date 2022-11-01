@@ -1,23 +1,55 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>연습문제 2</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>연습문제 2</title>
 </head>
 <body>
 
 <script>
-let table = document.createElement('table');
-
+let container = document.createElement('div');
 let rowsInput = document.createElement('input');
+let rowsLabel = document.createElement('label');
+let rowsText = document.createElement('span');
+rowsLabel.setAttribute('for','rows');
+rowsInput.setAttribute('name', 'rows');
+rowsText.innerText = '행';
+
 let colsInput = document.createElement('input');
+let colsLabel = document.createElement('label');
+colsInput.setAttribute('name', 'cols');
+colsLabel.innerText = '열';
 let btn = document.createElement('button');
 btn.setAttribute('type', 'submit');
+btn.addEventListener('click', createTable);
 
-rowsInput.
+btn.innerText = "테이블 만들기";
+
+// 
+rowsLabel.appendChild(rowsInput);
+rowsLabel.appendChild(rowsText);
+container.append(rowsLabel);
+container.appendChild(colsInput);
+container.appendChild(colsLabel);
+container.appendChild(btn);
+document.body.appendChild(container);
 
 
+
+function createTable(rows, cols){
+  let table = document.createElement('table');
+  for(let i = 0;i<rows; i++){
+    let row = document.createElement('tr');
+    for(let j = 0;j<cols;j++){
+      let col = document.createElement('td');
+      col.innerText = `(${row}, ${col})`;
+      row.appendChild(col);
+    }
+    table.appendChild(row);
+  }
+  body.appendChild(table);
+}
 
 
 
